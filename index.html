@@ -11,35 +11,38 @@
     <h1 class="text-center">Currency Converter</h1>
   </header>
   <main>
-    <label for="baseAmount">
-      <p class="text-center">Enter the data below</p>
-    </label>
-    <input type="number" id="baseAmount" placeholder="0.00">
-  <div class="currencySelector">
-    <select id="baseCurrency">
-      <option value="USD">USD</option>
-      <option value="EUR">EUR</option>
-      <option value="GBP">GBP</option>
-      <option value="JPY">JPY</option>
-      <option value="PLN">PLN</option>
-    </select>
-    <span class="divider">to</span>
-    <select id="convertedCurrency">
-      <option value="USD">USD</option>
-      <option selected value="EUR">EUR</option>
-      <option value="GBP">GBP</option>
-      <option value="JPY">JPY</option>
-      <option value="PLN">PLN</option>
-    </select>
-  </div>
-  <div class="center">
-    <button>Convert</button>
-  </div>
-  <div class="center">
-    <button>Copy</button>
-    <button>Swap</button>
-  </div>
-  <input type="number" id="baseAmount" placeholder="0.00">
+    <p class="text-center">Enter the data below</p>
+    <div class="currencyInput">
+      <input type="number" id="baseAmount" placeholder="0.00">
+    </div>
+    <div class="currencySelector">
+      <select id="baseCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="PLN">PLN</option>
+      </select>
+      <span class="divider">to</span>
+      <select id="convertedCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="PLN">PLN</option>
+      </select>
+    </div>
+    <div class="center">
+      <button id="convertButton">Convert</button>
+    </div>
+    <div class="center">
+      <button id="copyButton" class="button">Copy</button>
+      <button id="swapButton" class="button">Swap</button>
+    </div>
+    <div class="currencyInput">
+      <input type="number" id="convertedAmount" placeholder="0.00" readonly>
+    </div>
   </main>
+  <script src="main.js"></script>
 </body>
 </html>
