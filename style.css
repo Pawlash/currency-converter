@@ -67,7 +67,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-
+ /* delete basic input(spinners) and select window look*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
